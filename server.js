@@ -12,10 +12,10 @@ const image = require('./controllers/image');
 const db = knex({		// db is an alias for database
   client: 'pg',
   connection: {
-    connectionString: process.env.DATABASE_URL,
-	  ssl: {
-	    rejectUnauthorized: false
-	  }
+    host : '127.0.0.1',
+    user : 'postgres',	// Run \d command in postgress will return lists of relations (It also gives informationn about owner which here is postgres in user object) 
+    password : '',
+    database : 'Smart Brain'
   }
 });
 
@@ -31,8 +31,8 @@ app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) }
 app.put('/image',  (req, res) => { image.handleImage(req, res, db) })
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 
-app.listen(process.env.PORT || 3001, () => {
-	console.log(`App is running on port ${process.env.PORT}`);
+app.listen(3001, () => {
+	console.log('App is working');
 })
 
 /*********** Overview ***********
