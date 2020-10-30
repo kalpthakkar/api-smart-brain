@@ -9,4 +9,4 @@ It's loaded with many additional features such as a "secure login system" by enc
 Here's the link of [front-end repository](https://github.com/kalpthakkar/Face-Recognition-WebApp) 
 
 ### `Smart Brain`
-Open [https://kalpthakkar.github.io/Face-Recognition-WebApp](https://kalpthakkar.github.io/Face-Recognition-WebApp) to view it in the browser.
+Open this [link](https://kalpthakkar.github.io/Face-Recognition-WebApp) to view it in the browser.
